@@ -5,6 +5,8 @@ import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import slider1 from "../../images/slider1.png";
+import slider2 from "../../images/slider4.png";
 
 function SwiperComponent() {
   return (
@@ -26,18 +28,19 @@ function SwiperComponent() {
       className="swiper"
     >
       <SwiperSlide>
-        <img
-          className="img-slider"
-          src={process.env.PUBLIC_URL + "/images/slider1.png"}
-          alt="author"
-        />
+        <div className="  d-flex flex-direction-column align-content-around ">
+          <img
+            className="img-slider     "
+            src={slider1}
+            alt="author"
+          />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          className="img-slider"
-          src={process.env.PUBLIC_URL + "/images/slider4.png"}
-          alt="author"
-        />
+      <div className="  d-flex flex-direction-column justify-content-around">
+      <img className="img-slider" src={slider2} alt="author" />
+      </div>
+        
       </SwiperSlide>
     </Swiper>
   );
