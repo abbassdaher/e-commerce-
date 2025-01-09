@@ -1,14 +1,13 @@
-import React, { Fragment } from 'react'
-import NavBarComponent from '../../component/home/NavBarComponent'
-import SwiperComponent from '../../component/home/SwiperComponent'
-
+import React, { Fragment } from "react";
+import NavBarComponent from "../../component/home/NavBarComponent";
+import SwiperComponent from "../../component/home/SwiperComponent";
 function HomePages() {
   return (
     <Fragment>
-    <NavBarComponent/>
-    <SwiperComponent/>
+      <NavBarComponent />
+      <SwiperComponent />
     </Fragment>
-  )
+  );
 }
 
-export default HomePages
+export default HomePages;

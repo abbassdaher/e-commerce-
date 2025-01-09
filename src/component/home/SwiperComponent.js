@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -15,7 +15,7 @@ function SwiperComponent() {
       direction="horizontal"
       loop={true}
       pagination={{
-        clickable: true,
+        clickable: false,
       }}
       navigation={{
         nextEl: ".swiper-button-next",
@@ -24,23 +24,36 @@ function SwiperComponent() {
       scrollbar={{
         el: ".swiper-scrollbar",
       }}
-      modules={[Pagination]}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: true,
+      }}
+      style={{
+        "--swiper-pagination-color": "#7bccdc",
+        "--swiper-pagination-bullet-size": "10px",
+      }}
+      modules={[Pagination, Autoplay, Navigation]}
       className="swiper"
     >
-      <SwiperSlide>
-        <div className="  d-flex flex-direction-column align-content-around ">
-          <img
-            className="img-slider     "
-            src={slider1}
-            alt="author"
-          />
+      <SwiperSlide className="d-flex ">
+        <div className=" d-flex  slider">
+          <div className="   align-content-center  ">
+            <span className=" captionstext font-weight-bold text-lg">
+              <h1 className="">Saleeeeeeeeeee up to 50%</h1>
+            </span>
+          </div>
         </div>
+        <img className="bg-slider  img-slider" src={slider1} alt="author" />
       </SwiperSlide>
-      <SwiperSlide>
-      <div className="  d-flex flex-direction-column justify-content-around">
-      <img className="img-slider" src={slider2} alt="author" />
-      </div>
-        
+      <SwiperSlide className="d-flex ">
+        <div className=" d-flex  slider">
+          <div className=" align-content-center  ">
+            <span className=" captionstext font-weight-bold text-lg">
+              <h1>Saleeeeeeeeeee up to 50%</h1>
+            </span>
+          </div>
+        </div>
+        <img className="bg-slider img-slider" src={slider2} alt="author" />
       </SwiperSlide>
     </Swiper>
   );
