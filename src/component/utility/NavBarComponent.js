@@ -13,11 +13,11 @@ function NavBarComponent() {
       expand={'md'}
     >
       <Container>
-      <Navbar.Brand href="#home" className=" d-inline-block m-0 flex-nowrap">
+      <Navbar.Brand href="#home" className=" d-flex  flex-nowrap m-0">
           <img
-            className=" w-100 me-auto"
-            width={40}
-            height={40}
+            className=""
+            width={30}
+            height={30}
             src={logo}
             alt="logo"
           />
@@ -26,12 +26,12 @@ function NavBarComponent() {
         <Form.Control
           type="search"
           placeholder="Search"
-          className="w-50 "
+          className="w-75 "
           aria-label="Search"
         />
         <Navbar.Toggle aria-controls="basic-navbar-nav  " className="flex-nowrap" />
         
-        <Navbar.Collapse  className=" " id="basic-navbar-nav  ">
+        <Navbar.Collapse  className="  nav-collapse  " id="basic-navbar-nav  ">
           <nav expand={'md'} className=" d-flex flex-row  justify-content-around wrap">
             
             <Nav.Link className="" href="#home">
@@ -54,14 +54,4 @@ function NavBarComponent() {
 }
 
 export default NavBarComponent;
-// <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-//             //   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-//             //   <NavDropdown.Item href="#action/3.2">
-//             //     Another action
-//             //   </NavDropdown.Item>
-//             //   <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-//             //   <NavDropdown.Divider />
-//             //   <NavDropdown.Item href="#action/3.4">
-//             //     Separated link
-//             //   </NavDropdown.Item>
-//              </NavDropdown>
+
