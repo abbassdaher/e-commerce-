@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import cart from "../../images/clothe.png";
-import CategoryRound from "./CategoryRound";
+import CategoryRound from "../home/CategoryRound";
 import SubTitleCard from "./SubTitleCard";
 
 function CardComponnet({ title, button,rounded}) {
