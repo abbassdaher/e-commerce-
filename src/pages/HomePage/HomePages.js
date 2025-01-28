@@ -10,6 +10,7 @@ import NewProducts from "../../component/home/NewProducts";
 import laptop from "../../images/labtop.png";
 import pro1 from "../../images/prod3.png";
 import ProductTag from "../../component/home/ProductTag";
+import Footer from "../../component/utility/Footer";
 
 function HomePages() {
   return (
@@ -21,6 +22,7 @@ function HomePages() {
       <SaleSection />
       <NewProducts picture={laptop} />
       <ProductTag />
+      <Footer/>
     </Fragment>
   );
 }
