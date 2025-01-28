@@ -6,6 +6,10 @@ import CategoryRound from "../../component/home/CategoryRound";
 import CardProducts from "../../component/utility/CardProducts";
 import BestSelling from "../../component/home/BestSelling";
 import SaleSection from "../../component/home/SaleSection";
+import NewProducts from "../../component/home/NewProducts";
+import laptop from "../../images/labtop.png";
+import pro1 from "../../images/prod3.png";
+import ProductTag from "../../component/home/ProductTag";
 
 function HomePages() {
   return (
@@ -13,10 +17,10 @@ function HomePages() {
       <NavBarComponent />
       <SwiperComponent />
       <CategoryRound title="t-shirt" />
-      <BestSelling />
-      <SaleSection/>
-      
-
+      <BestSelling picture={pro1} />
+      <SaleSection />
+      <NewProducts picture={laptop} />
+      <ProductTag />
     </Fragment>
   );
 }

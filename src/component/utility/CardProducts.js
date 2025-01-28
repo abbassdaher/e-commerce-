@@ -1,12 +1,18 @@
 import React from "react";
-import { Button, Card,Col } from "react-bootstrap";
+import { Button, Card, Col } from "react-bootstrap";
 import item from "../../images/item.png";
 
-function CardProducts() {
+function CardProducts({ picture }) {
   return (
-    <Col className=" d-flex justify-content-center shadow mt-2 " xs="6" sm="4" md="3" lg="2">
+    <Col
+      className=" d-flex justify-content-center shadow mt-2 "
+      xs="6"
+      sm="4"
+      md="3"
+      lg="2"
+    >
       <Card style={{ width: "10rem" }}>
-        <Card.Img className="" variant="top" src={item} />
+        <Card.Img className="" variant="top" src={picture ? picture : item} />
         <Card.Text>
           <i className="fa fa-heart-o text-danger" aria-hidden="true"></i>
         </Card.Text>
@@ -24,8 +30,6 @@ function CardProducts() {
           </span>
         </Card.Text>
       </Card>
-
-      
     </Col>
   );
 }

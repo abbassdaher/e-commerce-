@@ -64,7 +64,13 @@
   overflow: scroll;
   scrollbar-width: none;
 }
-.nav-collapse {
+.nav-
+.item-of-category {
+  background-color: red;
+
+}
+
+collapse {
 }
 .soldArea {
   background: rgb(37, 37, 37);
@@ -83,6 +89,7 @@
   );
 
   height: 10rem;
+
   
 }
 .soldAreaText{
@@ -90,6 +97,7 @@
   font-weight: bolder;
   font-size: large;
 }
+
 
 @keyframes App-logo-spin {
   from {
