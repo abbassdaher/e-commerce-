@@ -15,14 +15,14 @@ import Footer from "../../component/utility/Footer";
 function HomePages() {
   return (
     <Fragment>
-      <NavBarComponent />
+      
       <SwiperComponent />
       <CategoryRound title="t-shirt" />
       <BestSelling picture={pro1} />
       <SaleSection />
       <NewProducts picture={laptop} />
       <ProductTag />
-      <Footer/>
+      
     </Fragment>
   );
 }

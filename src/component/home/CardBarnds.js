@@ -16,4 +16,5 @@ function CardBarnds({picture}) {
   )
 }
 
+
 export default CardBarnds

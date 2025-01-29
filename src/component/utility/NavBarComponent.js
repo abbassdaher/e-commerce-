@@ -13,7 +13,7 @@ function NavBarComponent() {
       expand={"md"}
     >
       <Container>
-        <Navbar.Brand href="#home" className=" d-flex  flex-nowrap m-0">
+        <Navbar.Brand href="/" className=" d-flex  flex-nowrap m-0 ">
           <img className="" width={30} height={30} src={logo} alt="logo" />
         </Navbar.Brand>
 
@@ -29,22 +29,22 @@ function NavBarComponent() {
         />
 
         <Navbar.Collapse className="  nav-collapse  " id="basic-navbar-nav  ">
-          <nav
+          <Nav
             expand={"md"}
             className=" d-flex flex-row  justify-content-around wrap"
           >
             
-            <Nav.Link className="" href="#home">
+            <Nav.Link className="" href="/login">
               <i class="fa fa-user-circle-o  " aria-hidden="true">
                 Login
               </i>
             </Nav.Link>
-            <Nav.Link className="" href="#link">
+            <Nav.Link className="" href="/cart">
               <i class="fa fa-shopping-cart" aria-hidden="true">
                 Cart
               </i>
             </Nav.Link>
-          </nav>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
