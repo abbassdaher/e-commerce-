@@ -1,3 +1,6 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -64,10 +67,8 @@
   overflow: scroll;
   scrollbar-width: none;
 }
-.nav-
-.item-of-category {
+.nav- .item-of-category {
   background-color: red;
-
 }
 
 collapse {
@@ -89,15 +90,12 @@ collapse {
   );
 
   height: 10rem;
-
-  
 }
-.soldAreaText{
+.soldAreaText {
   color: #61dafb;
   font-weight: bolder;
   font-size: large;
 }
-
 
 @keyframes App-logo-spin {
   from {

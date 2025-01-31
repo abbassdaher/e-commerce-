@@ -19,7 +19,8 @@ function NavBarComponent() {
 
         <Form.Control
           type="search"
-          placeholder="Search"
+          content=""
+          placeholder="Search..."
           className="w-75 "
           aria-label="Search"
         />
