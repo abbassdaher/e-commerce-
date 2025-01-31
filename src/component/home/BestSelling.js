@@ -6,7 +6,7 @@ import CardProducts from '../utility/CardProducts'
 function BestSelling({picture}) {
   return (
 <Container>
-<SubTitleCard title="Best Selling products" button={"more"} />
+<SubTitleCard title="Best Selling products" button={"more"} path={"/AllBestSelling"} picture={picture} />
 <Row className="justify-content-center mt-2 ">
 <CardProducts pictuer={picture}/>
 <CardProducts pictuer={picture}/>

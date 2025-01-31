@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Container, Row } from "react-bootstrap";
 import SubTitleCard from "../utility/SubTitleCard";
 import CardBarnds from "./CardBarnds";
@@ -9,15 +9,14 @@ import brandImage4 from "../../images/brand2.png";
 
 function ProductTag() {
   return (
-    <Container>
-      <SubTitleCard title={"Brands"} button={"more"} />
+    <Fragment>
       <Row className="justify-content-center">
         <CardBarnds picture={brandImage1} />
         <CardBarnds picture={brandImage2} />
         <CardBarnds picture={brandImage3} />
         <CardBarnds picture={brandImage4} />
       </Row>
-    </Container>
+    </Fragment>
   );
 }
 

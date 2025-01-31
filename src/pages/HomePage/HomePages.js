@@ -11,18 +11,32 @@ import laptop from "../../images/labtop.png";
 import pro1 from "../../images/prod3.png";
 import ProductTag from "../../component/home/ProductTag";
 import Footer from "../../component/utility/Footer";
+import SubTitleCard from "../../component/utility/SubTitleCard";
+import { Container } from "react-bootstrap";
 
 function HomePages() {
   return (
     <Fragment>
-      
       <SwiperComponent />
-      <CategoryRound title="t-shirt" />
-      <BestSelling picture={pro1} />
-      <SaleSection />
-      <NewProducts picture={laptop} />
-      <ProductTag />
-      
+      <Container>
+        <SubTitleCard
+          title={"category"}
+          button={"more"}
+          path={"/AllCategory"}
+        />
+        <CategoryRound title="t-shirt" />
+
+        <BestSelling picture={pro1} />
+        <SaleSection />
+        <SubTitleCard
+          title="New products"
+          button={"more"}
+          path={"/AllNewProduct"}
+        />
+        <NewProducts picture={laptop} />
+        <SubTitleCard title={"Brands"} button={"more"} path={"/AllBrands"} />
+        <ProductTag />
+      </Container>
     </Fragment>
   );
 }

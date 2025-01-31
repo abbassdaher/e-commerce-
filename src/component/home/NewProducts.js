@@ -6,7 +6,7 @@ import CardProducts from "../utility/CardProducts";
 function NewProducts({pictuer}) {
   return (
     <Container>
-      <SubTitleCard title="New products" button={"more"} />
+      
       <Row className="justify-content-center mt-2 ">
         <CardProducts pictuer={pictuer} />
         <CardProducts pictuer={pictuer} />
