@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Card,Row } from 'react-bootstrap'
+import { Container, Card,Row ,Col } from 'react-bootstrap'
 import SubTitleCard from '../utility/SubTitleCard'
 import CardProducts from '../utility/CardProducts'
 
@@ -12,7 +12,7 @@ function BestSelling({picture}) {
 <CardProducts pictuer={picture}/>
 <CardProducts pictuer={picture}/>
 <CardProducts pictuer={picture}/>
-
+     
 
 </Row>
 

@@ -5,8 +5,7 @@ function AllNewProduct() {
   return (
     <Fragment>
       <NewProducts/>
-      <NewProducts/>
-      <NewProducts/>
+      
     </Fragment>
   )
 }

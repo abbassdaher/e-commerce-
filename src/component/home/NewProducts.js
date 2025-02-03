@@ -1,19 +1,32 @@
-import React from "react";
+import React, { Fragment } from "react";
 import SubTitleCard from "../utility/SubTitleCard";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import CardProducts from "../utility/CardProducts";
+import SideFiter from "../utility/SideFilter";
 
-function NewProducts({pictuer}) {
+function NewProducts({ pictuer }) {
   return (
-    <Container>
-      
+    <Fragment>
       <Row className="justify-content-center mt-2 ">
-        <CardProducts pictuer={pictuer} />
-        <CardProducts pictuer={pictuer} />
-        <CardProducts />
-        <CardProducts />
+        <Col className=" " style={{ maxWidth: "20%" }}>
+          <div className="position-fixed m-2">
+            <SideFiter/>
+          </div>
+        </Col>
+        <Col className="" style={{ maxWidth: "80%" }}>
+          <Row className="justify-content-center mt-2 ">
+            <CardProducts pictuer={pictuer} />
+            <CardProducts pictuer={pictuer} />
+            <CardProducts />
+            <CardProducts />
+            <CardProducts />
+            <CardProducts />
+            <CardProducts />
+            <CardProducts />
+          </Row>
+        </Col>
       </Row>
-    </Container>
+    </Fragment>
   );
 }
 

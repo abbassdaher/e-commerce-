@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row,Col } from "react-bootstrap";
 import SubTitleCard from "../utility/SubTitleCard";
 import CardBarnds from "./CardBarnds";
 import brandImage1 from "../../images/brand1.png";
@@ -15,6 +15,7 @@ function ProductTag() {
         <CardBarnds picture={brandImage2} />
         <CardBarnds picture={brandImage3} />
         <CardBarnds picture={brandImage4} />
+        
       </Row>
     </Fragment>
   );
